@@ -1,4 +1,5 @@
--* AudioPlayer LOG *-
+-* AudioPlayer LOGS *- https://ivents.fun/audioplayer/log.txt
+https://ivents.fun/audioplayer/
 
 13.08.2024 buildnull > Published online
 15.08.2024 build150824_2222 > Fixed javascript loading correctly

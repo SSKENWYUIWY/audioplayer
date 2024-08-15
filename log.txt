@@ -1,3 +1,6 @@
-** AudioPlayer LOG **
-13.08.2024 -> Publiched
-15.08.2024 -> Javascript fix
+-* AudioPlayer LOG *-
+
+13.08.2024 buildnull > Published online
+15.08.2024 build150824_2222 > Fixed javascript loading correctly
+
+@djkpd 2024

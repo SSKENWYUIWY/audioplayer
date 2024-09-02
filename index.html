@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AudioPlayer b020924_1430</title>
+    <link rel="shortcut icon" href="developercat.png"/>
     <meta name="title" content="AudioPlayer">
     <meta name="description" content="Simple online audio player without ads">
     <meta name="keywords" content="audio player, audio, player">
@@ -38,7 +39,6 @@
             text-align: center;
             width: 320px;
             position: relative;
-            z-index: 2;
         }
 
         h2 {
@@ -134,27 +134,6 @@
             transition: background-color 0.3s ease;
         }
 
-        .easter-egg {
-            display: none;
-            position: absolute;
-            top: 71px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 14px;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-            z-index: 1;
-        }
-
-        .easter-egg.show {
-            display: block;
-            color: #aaa;
-            opacity: 0.5;
-            border-radius: 5px;
-            transition: opacity 0.5s ease;
-            z-index: 1;
-        }
-
         .theme-toggle:hover {
             background-color: transparent;
             opacity: 1;
@@ -190,10 +169,6 @@
         body.light-theme .file-info label {
             color: #666;
         }
-
-        body.light-theme .easter-egg.show {
-            color: #333;
-        }
     </style>
 </head>
 
@@ -223,7 +198,6 @@
                 <input type="checkbox" id="preservePitch" class="checkbox" checked>
             </label>
         </div><br><span class="build">b020924_1430</span>
-        <div id="easterEgg" class="easter-egg"><img src="developercat.png"></div>
     </div>
     <script>
         const audioPlayer = document.getElementById('audioPlayer');
@@ -238,7 +212,6 @@
         const errorMessage = document.getElementById('errorMessage');
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
-        const easterEgg = document.getElementById('easterEgg');
         let clickCount = 0;
 
         const allowedTypes = ['audio/*', 'video/*'];
@@ -307,12 +280,6 @@
             } else {
                 themeToggle.textContent = '🌙';
                 localStorage.setItem('theme', '');
-            }
-            if (clickCount % 30 === 0) {
-                easterEgg.classList.add('show');
-                setTimeout(function () {
-                    easterEgg.classList.remove('show');
-                }, 5000);
             }
         });
     </script>

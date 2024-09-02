@@ -1,8 +1,0 @@
--* AudioPlayer LOGS *- https://ivents.fun/audioplayer/log.txt
-https://ivents.fun/audioplayer/
-
-13.08.2024 bnull > Published online
-15.08.2024 b150824_2222 > Fixed javascript loading correctly
-16.08.2024 b160824_2220 > Adding build version & writes if format unsupported
-
-@djkpd 2024
